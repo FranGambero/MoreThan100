@@ -13,7 +13,18 @@ public class InfoDisplay : MonoBehaviour
     public TextMeshProUGUI companyTitleText;
     public Image companyImage;
 
+    public void LoadNewOffer(Offer newOffer) {
+        selectedOffer = newOffer;
+        ShowInfo();
+    }
+
+
     public void ShowInfo() {
         Debug.Log("La oferta seleccionda es " + selectedOffer.offerTitle);
+
+        offerTitleText.text = selectedOffer.offerTitle;
+        offerDescriptionText.text = selectedOffer.offerDescription;
+        companyTitleText.text = selectedOffer.companyTitle;
+        companyImage.sprite = selectedOffer.companyImage;
     }
 }

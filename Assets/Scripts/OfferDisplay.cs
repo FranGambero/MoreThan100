@@ -33,7 +33,8 @@ public class OfferDisplay : MonoBehaviour
     }
 
     public void loadOffer() {
-        Debug.Log("La oferta a utilizar es " + offerTitleText.text);
+        selectedOfferPanel.LoadNewOffer(this.offer);
+        // Debug.Log("La oferta a utilizar es " + offerTitleText.text);
     }
 
 
