@@ -13,5 +13,6 @@ MonoBehaviour:
   m_Name: Offer2
   m_EditorClassIdentifier: 
   offerTitle: Lead Game Designer
+  offerDescription: pal juego de los caramelitos
   companyTitle: King
   companyImage: {fileID: 21300000, guid: 1cda8309c8311a14db0ec2a05a602b10, type: 3}

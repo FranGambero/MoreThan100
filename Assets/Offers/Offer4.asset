@@ -10,9 +10,9 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 901bb4be6ef4f554ab8f5e4da70c0ad9, type: 3}
-  m_Name: Offer1
+  m_Name: Offer4
   m_EditorClassIdentifier: 
-  offerTitle: Mid Game Designer
-  offerDescription: Pal assasins creed
-  companyTitle: Ubisoft
-  companyImage: {fileID: 21300000, guid: c2cba5a78624a1c438e283037704bddd, type: 3}
+  offerTitle: Florero
+  offerDescription: Para poner flores bonitas
+  companyTitle: Rosas maria
+  companyImage: {fileID: 21300000, guid: 61ae89379e8845643b246ad16daa0667, type: 3}

@@ -13,5 +13,6 @@ MonoBehaviour:
   m_Name: Offer3
   m_EditorClassIdentifier: 
   offerTitle: Junior mal pagao
+  offerDescription: pal theme park
   companyTitle: Codi
   companyImage: {fileID: 21300000, guid: 07472011842736a4d85700ed3955ecfc, type: 3}
