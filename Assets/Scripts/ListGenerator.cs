@@ -59,7 +59,7 @@ public class ListGenerator : Singleton<ListGenerator> {
     }
 
     public Offer GetNextOffer() {
-          if(currentIndex >= shuffledList.Count) {
+          if(currentIndex >= shuffledList.Count || listGeneratedOffers.Count == 0) {
             mergeElements();
         }
 
@@ -90,6 +90,8 @@ public class ListGenerator : Singleton<ListGenerator> {
     public void removeOffer(OfferDisplay offerToRemove) {
         listGeneratedOffers.Remove(offerToRemove);
         GameObject.Destroy(offerToRemove.gameObject);
+
+        infoDisplay.waitingPanel.SetActive(true);
 
         // LayoutRebuilder.ForceRebuildLayoutImmediate(this.gameObject.GetComponent<RectTransform>());
     }

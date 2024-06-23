@@ -4,8 +4,9 @@ using TMPro;
 using UnityEngine;
 using UnityEngine.UI;
 
-public class InfoDisplay : MonoBehaviour
-{
+public class InfoDisplay : MonoBehaviour {
+    public GameObject waitingPanel;
+
     public Offer selectedOffer;
     public OfferDisplay selectedOfferDisplay;
 
@@ -15,6 +16,9 @@ public class InfoDisplay : MonoBehaviour
     public Image companyImage;
 
     public void LoadNewOffer(OfferDisplay newOfferDisplay) {
+
+        waitingPanel.SetActive(false);
+
         selectedOfferDisplay = newOfferDisplay;
         selectedOffer = newOfferDisplay.offer;
         ShowInfo();
@@ -41,6 +45,7 @@ public class InfoDisplay : MonoBehaviour
 
             ListGenerator.instance.removeOffer(selectedOfferDisplay);
 
+            // waitingPanel.SetActive(true);
 
             Debug.Log("Ofertas después de borrar " + listStoredOffers.Count);
 

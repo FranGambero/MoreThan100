@@ -37,5 +37,9 @@ public class OfferDisplay : MonoBehaviour
         // Debug.Log("La oferta a utilizar es " + offerTitleText.text);
     }
 
+    public void deleteOfferInside() {
+        ListGenerator.instance.removeOffer(this);
+    }
+
 
 }
