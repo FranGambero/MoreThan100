@@ -13,6 +13,8 @@ public class OfferDisplay : MonoBehaviour
     public TextMeshProUGUI companyTitleText;
     public Image companyImage;
 
+    public InfoDisplay selectedOfferPanel;
+
 
     // Start is called before the first frame update
     void Start()
@@ -24,6 +26,14 @@ public class OfferDisplay : MonoBehaviour
 
     public void setOffer(Offer newOffer) {
         offer = newOffer;
+    }
+
+    public void setInfoDisplay(InfoDisplay selectedOfferPanel) {
+        this.selectedOfferPanel = selectedOfferPanel;
+    }
+
+    public void loadOffer() {
+        Debug.Log("La oferta a utilizar es " + offerTitleText.text);
     }
 
 

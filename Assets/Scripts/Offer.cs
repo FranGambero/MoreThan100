@@ -7,6 +7,7 @@ using UnityEngine.UI;
 public class Offer : ScriptableObject
 {
     public string offerTitle;
+    public string offerDescription;
     public string companyTitle;
     public Sprite companyImage;
 
