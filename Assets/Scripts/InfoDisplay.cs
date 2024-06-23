@@ -7,14 +7,16 @@ using UnityEngine.UI;
 public class InfoDisplay : MonoBehaviour
 {
     public Offer selectedOffer;
+    public OfferDisplay selectedOfferDisplay;
 
     public TextMeshProUGUI offerTitleText;
     public TextMeshProUGUI offerDescriptionText;
     public TextMeshProUGUI companyTitleText;
     public Image companyImage;
 
-    public void LoadNewOffer(Offer newOffer) {
-        selectedOffer = newOffer;
+    public void LoadNewOffer(OfferDisplay newOfferDisplay) {
+        selectedOfferDisplay = newOfferDisplay;
+        selectedOffer = newOfferDisplay.offer;
         ShowInfo();
     }
 
@@ -30,11 +32,17 @@ public class InfoDisplay : MonoBehaviour
 
     public void SendApplication() {
         if (true) {
-            List<OfferDisplay> lista = ListGenerator.instance.getListGeneratedOffers();
+            List<OfferDisplay> listStoredOffers = ListGenerator.instance.getListGeneratedOffers();
+            Debug.Log("Ofertas antes de borrar " + listStoredOffers.Count);
 
-            for (int i = 0; i < lista.Count - 1; i++) {
-                Debug.Log("Almacenada la oferta " + lista[i].offerTitleText.text);
-            }
+            //for (int i = 0; i < listStoredOffers.Count - 1; i++) {
+            //    Debug.Log("Almacenada la oferta " + listStoredOffers[i].offerTitle);
+            //}
+
+            ListGenerator.instance.removeOffer(selectedOfferDisplay);
+
+
+            Debug.Log("Ofertas después de borrar " + listStoredOffers.Count);
 
         }
     }

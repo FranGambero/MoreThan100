@@ -23,7 +23,7 @@ public class ListGenerator : Singleton<ListGenerator> {
 
 
         // Para autoseleccionar primera oferta, cambiable
-        infoDisplay.LoadNewOffer(shuffledList[0]);
+        // infoDisplay.LoadNewOffer(shuffledList[0]);
     }
 
     private void Update() {
@@ -85,5 +85,12 @@ public class ListGenerator : Singleton<ListGenerator> {
 
     public List<OfferDisplay> getListGeneratedOffers() {
         return this.listGeneratedOffers;
+    }
+
+    public void removeOffer(OfferDisplay offerToRemove) {
+        listGeneratedOffers.Remove(offerToRemove);
+        GameObject.Destroy(offerToRemove.gameObject);
+
+        // LayoutRebuilder.ForceRebuildLayoutImmediate(this.gameObject.GetComponent<RectTransform>());
     }
 }
