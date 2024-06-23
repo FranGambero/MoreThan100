@@ -829,6 +829,7 @@ MonoBehaviour:
   offerTitleText: {fileID: 7660905350859403609}
   companyTitleText: {fileID: 3477880325888619717}
   companyImage: {fileID: 1570402292570648735}
+  selectedOfferPanel: {fileID: 0}
 --- !u!114 &3282778517279163804
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -851,9 +852,9 @@ MonoBehaviour:
   m_Transition: 1
   m_Colors:
     m_NormalColor: {r: 1, g: 1, b: 1, a: 1}
-    m_HighlightedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
-    m_PressedColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 1}
-    m_SelectedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
+    m_HighlightedColor: {r: 0.2713154, g: 0.5540101, b: 0.8584906, a: 1}
+    m_PressedColor: {r: 0, g: 0.41076696, b: 0.8207547, a: 1}
+    m_SelectedColor: {r: 0.1544589, g: 0.4022371, b: 0.8396226, a: 1}
     m_DisabledColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 0.5019608}
     m_ColorMultiplier: 1
     m_FadeDuration: 0.1

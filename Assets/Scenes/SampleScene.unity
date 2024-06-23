@@ -1641,9 +1641,41 @@ PrefabInstance:
       propertyPath: m_Name
       value: OfferTitle
       objectReference: {fileID: 0}
+    - target: {fileID: 5066262595283372562, guid: ab8ed0a26c82a1741a6e01e71742b7a0, type: 3}
+      propertyPath: m_Name
+      value: ApplyButton
+      objectReference: {fileID: 0}
     - target: {fileID: 5973766340635279580, guid: ab8ed0a26c82a1741a6e01e71742b7a0, type: 3}
       propertyPath: m_Name
       value: OfferDescription
+      objectReference: {fileID: 0}
+    - target: {fileID: 7686792716744792535, guid: ab8ed0a26c82a1741a6e01e71742b7a0, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7686792716744792535, guid: ab8ed0a26c82a1741a6e01e71742b7a0, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7686792716744792535, guid: ab8ed0a26c82a1741a6e01e71742b7a0, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 91672108}
+    - target: {fileID: 7686792716744792535, guid: ab8ed0a26c82a1741a6e01e71742b7a0, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 7686792716744792535, guid: ab8ed0a26c82a1741a6e01e71742b7a0, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: SendApplication
+      objectReference: {fileID: 0}
+    - target: {fileID: 7686792716744792535, guid: ab8ed0a26c82a1741a6e01e71742b7a0, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
+      value: InfoDisplay, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 7686792716744792535, guid: ab8ed0a26c82a1741a6e01e71742b7a0, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
       objectReference: {fileID: 0}
     - target: {fileID: 7917056657807380867, guid: ab8ed0a26c82a1741a6e01e71742b7a0, type: 3}
       propertyPath: m_Pivot.x

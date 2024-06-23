@@ -3,9 +3,11 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
-public class ListGenerator : MonoBehaviour {
+public class ListGenerator : Singleton<ListGenerator> {
     public OfferDisplay listItemPrefab; // Prefab del elemento de la lista
     public Transform contentPanel;    // Panel de contenido del Scroll View
+
+    private List<OfferDisplay> listGeneratedOffers;
 
     public InfoDisplay infoDisplay;
 
@@ -14,9 +16,14 @@ public class ListGenerator : MonoBehaviour {
     private int currentIndex = 0;
 
     void Start() {
+        listGeneratedOffers = new List<OfferDisplay>();
+
         mergeElements();
         PopulateList(2);
 
+
+        // Para autoseleccionar primera oferta, cambiable
+        infoDisplay.LoadNewOffer(shuffledList[0]);
     }
 
     private void Update() {
@@ -69,9 +76,14 @@ public class ListGenerator : MonoBehaviour {
             newItem.setOffer(GetNextOffer());
             newItem.setInfoDisplay(infoDisplay);
 
+            listGeneratedOffers.Add(newItem);
+
             numOffers--;
         }
 
+    }
 
+    public List<OfferDisplay> getListGeneratedOffers() {
+        return this.listGeneratedOffers;
     }
 }

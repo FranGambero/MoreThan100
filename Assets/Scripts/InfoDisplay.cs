@@ -27,4 +27,15 @@ public class InfoDisplay : MonoBehaviour
         companyTitleText.text = selectedOffer.companyTitle;
         companyImage.sprite = selectedOffer.companyImage;
     }
+
+    public void SendApplication() {
+        if (true) {
+            List<OfferDisplay> lista = ListGenerator.instance.getListGeneratedOffers();
+
+            for (int i = 0; i < lista.Count - 1; i++) {
+                Debug.Log("Almacenada la oferta " + lista[i].offerTitleText.text);
+            }
+
+        }
+    }
 }
