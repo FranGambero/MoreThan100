@@ -41,5 +41,4 @@ public class OfferDisplay : MonoBehaviour
         ListGenerator.instance.removeOffer(this);
     }
 
-
 }
