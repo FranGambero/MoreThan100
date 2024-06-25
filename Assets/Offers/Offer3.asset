@@ -12,7 +12,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 901bb4be6ef4f554ab8f5e4da70c0ad9, type: 3}
   m_Name: Offer3
   m_EditorClassIdentifier: 
-  offerTitle: Junior mal pagao
+  offerTitle: Junior programador mal pagao
   offerDescription: pal theme park
+  offerJobRole: 1
   companyTitle: Codi
   companyImage: {fileID: 21300000, guid: 07472011842736a4d85700ed3955ecfc, type: 3}

@@ -14,5 +14,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   offerTitle: Florero
   offerDescription: Para poner flores bonitas
+  offerJobRole: 2
   companyTitle: Rosas maria
   companyImage: {fileID: 21300000, guid: 61ae89379e8845643b246ad16daa0667, type: 3}
